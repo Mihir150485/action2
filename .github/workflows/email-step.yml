@@ -1,0 +1,16 @@
+name: Email Step Workflow
+
+on:
+  workflow_dispatch:   # lets you manually trigger it
+
+jobs:
+  test:
+    name: Test Job
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: 21f3000401@ds.study.iitm.ac.in
+        run: echo "Hello, world! This action step has my email address in its name."
